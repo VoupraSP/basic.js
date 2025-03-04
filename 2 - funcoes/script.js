@@ -20,4 +20,17 @@ function livro(nome, ano, autor) {
 
 const retornoFunc = livro("O Senhor dos Anéis", 1954, "J. R. R. Tolkien");
 
-console.log(retornoFunc.frase);
+console.log(retornoFunc);
+
+
+function biz(nome, ano, modelo) {
+    return {
+        nome: nome.toUpperCase(),
+        ano: 2025 - ano,
+        modelo,
+        frase: nome +' '+ ano +' '+ modelo,
+    };
+}
+
+const retornoBiz = biz("Biz", 2008, "ES/Gasolina");
+console.log(retornoBiz);
