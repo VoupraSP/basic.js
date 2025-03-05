@@ -1,8 +1,11 @@
-const ativar = document.querySelector('.ativar');
+/**  ATIVAAR **/
 
-function ativarFunc() {
-    console.log('Clicou em:', ativar);
+const botao = document.querySelector(".botao");
+
+function mostrar() {
+    const texto = document.querySelector(".texto");
+    texto.classList.toggle("ativar");
 }
 
-ativar.addEventListener('click', ativarFunc);
-console.log(ativar);
+botao.addEventListener("click", mostrar);
+
